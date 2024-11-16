@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - HeartAwake</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #0073e6;
+      color: white;
+      padding: 15px 0;
+    }
+
+    .header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .header h1 {
+      font-size: 24px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Services Section */
+    .services-section {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #ffffff;
+    }
+
+    .services-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #0073e6;
+    }
+
+    .services-section p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .services-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .service-card {
+      background-color: #eaf6ff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: left;
+    }
+
+    .service-card h3 {
+      color: #0073e6;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .service-card p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .pricing-section {
+      background-color: #f9f9f9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .pricing-section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .pricing-card {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .pricing-card h3 {
+      color: #0073e6;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .pricing-card p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .pricing-card .price {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .pricing-card button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .pricing-card button:hover {
+      background-color: #005bb5;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>HeartAwake</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="services-section">
+      <h2>Our Services</h2>
+      <p>Explore our range of services designed to improve cardiovascular health and provide personalized care solutions.</p>
+      <div class="services-list">
+        <div class="service-card">
+          <h3>Awareness (Free)</h3>
+          <p>Access educational resources and tools to learn about cardiovascular health risks and prevention strategies.</p>
+        </div>
+        <div class="service-card">
+          <h3>Early Detection</h3>
+          <p>Benefit from AI-powered analysis for early risk detection, available for free to all users.</p>
+        </div>
+        <div class="service-card">
+          <h3>Personalized Insights (premium)</h3>
+          <p>Get tailored insights and preventive care plans to manage your cardiovascular health effectively.</p>
+        </div>
+        <div class="service-card">
+          <h3>Virtual Consultations (premium)</h3>
+          <p>Connect with expert physicians for personalized consultation sessions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing-section">
+      <h2>Subscription Plans</h2>
+      <div class="pricing-container">
+        <div class="pricing-card">
+          <h3>Basic Plan</h3>
+          <p>Free access to awareness and early detection tools.</p>
+          <p class="price">₦0 / month</p>
+          <button>Get Started</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Premium Plan</h3>
+          <p>Access personalized insights, preventive care, and virtual consultations.</p>
+          <p class="price">₦3,000 / month</p>
+          <button>Subscribe Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 HeartAwake. All rights reserved.</p>
+  </footer>
+</body>
+</html>
